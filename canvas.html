@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilustracija - Kuća</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #e8f4f8;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 2px solid #333;
+            background-color: #87ceeb;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="500"></canvas>
+    
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        
+    
+        ctx.fillStyle = "skyblue";
+        ctx.fillRect(0, 0, 600, 500);
+        
+     
+        ctx.fillStyle = "forestgreen";
+        ctx.fillRect(0, 350, 600, 150);
+        
+    
+        ctx.fillStyle = "chocolate";
+        ctx.fillRect(150, 200, 300, 200);
+        
+        
+
+        ctx.fillStyle = "saddlebrown";
+        ctx.fillRect(270, 300, 60, 100);
+        
+    
+        ctx.fillStyle = "skyblue";
+        ctx.fillRect(200, 250, 50, 50);
+        
+    
+        ctx.strokeStyle = "skyblue";
+        ctx.lineWidth = 3;
+        ctx.fillRect(330, 250, 50, 50);
+        
+       
+        ctx.fillStyle = "gold";
+        ctx.beginPath();
+        ctx.arc(500, 150, 30, 0, 2 * Math.PI);
+        ctx.fill();
+        
+        
+        ctx.strokeStyle = "darkorange";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        
+        
+
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 3;
+        ctx.stroke();
+        
+    
+        ctx.fillStyle = "black";
+        ctx.font = "24px Arial";
+        ctx.fillText("Kuca", 260, 450);
+    </script>
+</body>
+</html>
